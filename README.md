@@ -85,7 +85,8 @@ Another important part of this will be the idea of Pure and Total functions.
 - Total Function: A function for which a definition exists for all inputs. For instance: `a => a + 2` is a total function but `(n, d) => n / d` is not a total function(undefined for `d = 0`)
 - Side-Effect: Any action taken by a function which influences "The ourside world", such as printing to console, logging, touching a database, or any other non-referentially-transparent action.
 -- This means that hashing a password is a side-effect! It consumes system entropy, and does not result in the same value for any given input.
-
+- Category: In functional programing, a category refers to something within Category Theory, or in the imperative/OO world... design patterns, except with laws and stuff, yo.
+- Monad: There are confusing definitions, and complex examplanations, but lets just say for our purposes here... a Monad is something which is ordered and for which a flatMap function is defined.
 
 
 
