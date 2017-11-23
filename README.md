@@ -1,6 +1,6 @@
-#Getting Started With Scala and Functional Programming
+# Getting Started With Scala and Functional Programming
 
-##What is this thing?
+## What is this thing?
 
 This is a repository that contains both documentation on how to get started with scala,
 as well as a near empty project that has a configured build tool, and dependencies that will support
@@ -16,7 +16,7 @@ a program instead in terms of functions taking immutable data and returning immu
 
 Another important part of this will be the idea of Pure and Total functions.
 
-##But why though?
+## But why though?
 
 - Letting the compiler do as much work as possible is pretty cool. After all, what can never be null never needs a null check!
 - Data Sharing: In this programming paradigm, we use immutable values to contain state. Thanks to this, we can use a concurrency model that relies heavily on shared access to resources.... Without -ever- needing locks, or mutexes, and without ever having a race condition. *(Except things that are below our level of abstraction as must always forever be so, such as a database-connection-level lock on a specific row)*
@@ -41,9 +41,9 @@ Another important part of this will be the idea of Pure and Total functions.
  LINQ -is- functional programming. At least, some of it ;)
  - A bunch of other reasons including maintainability, referential transparency, and all sorts of stuff, but you already probably know some of the benfits if this workshop interests you. 
 
-##Step One: Get the tools.
+## Step One: Get the tools.
 
-###Windows
+### Windows
 
 - [Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html)
 - The build automation tool: [sbt](http://www.scala-sbt.org/download.html). Make sure that you add it to your `$PATH`
@@ -51,14 +51,14 @@ Another important part of this will be the idea of Pure and Total functions.
 - You will need an editor. I highly recommend Intellij's [IDEA](https://www.jetbrains.com/idea/download/?gclid=EAIaIQobChMIwru2stDU1wIV3cqyCh1ZSQCzEAAYASABEgIRbvD_BwE&gclsrc=aw.ds.ds&dclid=CLjSu97Q1NcCFVGTGAodGz0OnA#section=windows). *Seriously, trust me on this, if you want something intellisense-likey, there's almost no other option for an editor.*
 - I recommend using git bash when executing sbt commands, but who knows maybe powershell is fine too. I wouldn't know.
 
-###OSX
+### OSX
 
 - Java: `brew cask install java`
 - Set your `JAVA_HOME` environment variable. [This might be helpful?](http://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux)
 - SBT (build automation tool): `brew install sbt`
 - You will need an editor. I highly recommend Intellij's [IDEA](https://www.jetbrains.com/idea/download/?gclid=EAIaIQobChMIn7_C49LU1wIVE5AYCh18cgFkEAAYASABEgLXw_D_BwE&gclsrc=aw.ds.ds&dclid=CNSNt-TS1NcCFReAmgodkS0Ojg#section=mac). *Seriously, trust me on this, if you want something intellisense-likey, there's almost no other option for an editor.*
 
-##Step Two: Some Basic Terminology
+## Step Two: Some Basic Terminology
 
 
 
