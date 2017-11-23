@@ -1,6 +1,7 @@
 package se.evolvetechnology.scala.workshop.basic
 
-import cats.effect.{IO}
+import cats.effect.IO
+
 import scala.io.StdIn
 
 
@@ -23,10 +24,28 @@ object Main {
 
     //We'll find that, still, we get no action on the console. Maybe this is why people always say it's hard to "do anything"
     //in haskell.... so far we're "describing" the doing all day, hell, we can map actions to other actions, compose them all day.
-    
+
     //Uncomment the line below, lets make it run the unsafe way, shall we?
     //echoToConsole.unsafeRunSync() //Synchronously and unsafely run an IO.
+
+    //You know what would be nice? What if we could chain these IOs really simply and easily....
+    //ioChain.unsafeRunSync()
   }
 
+  def ioChain: IO[Unit] = {
+    for {
+      prompt <- IO(Console.println("Basic composition of Asynchronous IO actions."))
+      numberPrompt <- IO(Console.println("Enter a whole number: "))
+      number <- IO(StdIn.readLong())
+      numberPrompt <- IO(Console.println("Enter a whole number: "))
+      multiplicationFactor <- IO(StdIn.readLong())
+      product <- IO(number * multiplicationFactor)
+      output <- IO(Console.println(s"The product of your values is: $product"))
+    } yield output
+    //Odd, this looks like synchronous programming.
+    //In a way it kind of is, especially when we unsafeRunSync the whole thing, it becomes innately blocking...
+    //But normally IO actions can be run on their own thread, composed to run together, or separately. They're basically a C# Task, or a JS Promise
+    //But with way more power to do things.
+  }
 
 }
