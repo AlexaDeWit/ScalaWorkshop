@@ -65,6 +65,7 @@ Another important part of this will be the idea of Pure and Total functions.
 1. Open the Edit Configurations Menu
 ![Config Menu](/readme_images/EditRunConfigurations.png?raw=true "Configuarion Menu")
 2. Create a new SBT Task
+
 ![New Task](/readme_images/CreateNewSbtTask.png?raw=true "New Sbt Task")
 3. Define the Test Task as such. This task will run continuously and reload when it detects code changes.
 ![Test Task](/readme_images/TestTask.png?raw=true "Test Task")
