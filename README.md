@@ -62,16 +62,20 @@ Another important part of this will be the idea of Pure and Total functions.
 
 ## Step Two: Build the thing and run the Test(s)
 
-1. Open the Edit Configurations Menu
+- Open the Edit Configurations Menu
+
 ![Config Menu](/readme_images/EditRunConfigurations.png?raw=true "Configuarion Menu")
-2. Create a new SBT Task
+- Create a new SBT Task
 
 ![New Task](/readme_images/CreateNewSbtTask.png?raw=true "New Sbt Task")
-3. Define the Test Task as such. This task will run continuously and reload when it detects code changes.
+- Define the Test Task as such. This task will run continuously and reload when it detects code changes.
+
 ![Test Task](/readme_images/TestTask.png?raw=true "Test Task")
-4. Define the Run task as such. This task will run continuously and reload when it detects code changes.
+- Define the Run task as such. This task will run continuously and reload when it detects code changes.
+
 ![Run Task](/readme_images/RunTask.png?raw=true "Run Task")
-5. Both tasks can be stopped at any time by using the stop button on the top-right of IDEA.
+- Both tasks can be stopped at any time by using the stop button on the top-right of IDEA.
+
 ![Task Menu](/readme_images/TaskMenu.png?raw=true "Task Menu") 
 
 ## Step Three: Some Basic Terminology
