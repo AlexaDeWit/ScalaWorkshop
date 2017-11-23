@@ -23,10 +23,9 @@ object Main {
 
     //We'll find that, still, we get no action on the console. Maybe this is why people always say it's hard to "do anything"
     //in haskell.... so far we're "describing" the doing all day, hell, we can map actions to other actions, compose them all day.
-
-
+    
     //Uncomment the line below, lets make it run the unsafe way, shall we?
-    echoToConsole.unsafeRunSync() //Synchronously and unsafely run an IO.
+    //echoToConsole.unsafeRunSync() //Synchronously and unsafely run an IO.
   }
 
 
