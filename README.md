@@ -1,5 +1,21 @@
 #Getting Started With Scala and Functional Programming
 
+##What is this thing?
+
+This is a repository that contains both documentation on how to get started with scala,
+as well as a near empty project that has a configured build tool, and dependencies that will support
+serving http requests, as well as json serialization support.
+
+This workshop will involve playing around with creating a JSON API in Scala as a means
+to illustrate functional programming principles in practice, as well as show the benefits
+one can garner from the sort of type-level programming that is common in this paradigm.
+
+Where many may be used to a programming paradigm centred around actions being taken, 
+and state mutating as a response to inputs, we will instead try to think and model
+a program instead in terms of functions taking immutable data and returning immutable results.
+
+Another important part of this will be the idea of Pure and Total functions.
+
 ##Step One: Get the tools.
 
 ###Windows
@@ -16,6 +32,9 @@
 - Set your `JAVA_HOME` environment variable. [This might be helpful?](http://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux)
 - SBT (build automation tool): `brew install sbt`
 - You will need an editor. I highly recommend Intellij's [IDEA](https://www.jetbrains.com/idea/download/?gclid=EAIaIQobChMIn7_C49LU1wIVE5AYCh18cgFkEAAYASABEgLXw_D_BwE&gclsrc=aw.ds.ds&dclid=CNSNt-TS1NcCFReAmgodkS0Ojg#section=mac). *Seriously, trust me on this, if you want something intellisense-likey, there's almost no other option for an editor.*
+
+##Step Two: Some Basic Terminology
+
 
 
 
