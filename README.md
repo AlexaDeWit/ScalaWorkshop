@@ -80,6 +80,12 @@ Another important part of this will be the idea of Pure and Total functions.
 
 ## Step Three: Some Basic Terminology
 
+- Pure Function: A function where its value(return) is based entirely on its inputs, and which mutates nothing external to itself.
+- Referential Transparency: Any function which can be replaced by its value without changing the overall program is called a referentially transparent function.
+- Total Function: A function for which a definition exists for all inputs. For instance: `a => a + 2` is a total function but `(n, d) => n / d` is not a total function(undefined for `d = 0`)
+- Side-Effect: Any action taken by a function which influences "The ourside world", such as printing to console, logging, touching a database, or any other non-referentially-transparent action.
+-- This means that hashing a password is a side-effect! It consumes system entropy, and does not result in the same value for any given input.
+
 
 
 
