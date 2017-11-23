@@ -88,5 +88,9 @@ Another important part of this will be the idea of Pure and Total functions.
 - Category: In functional programing, a category refers to something within Category Theory, or in the imperative/OO world... design patterns, except with laws and stuff, yo.
 - Monad: There are confusing definitions, and complex examplanations, but lets just say for our purposes here... a Monad is something which is ordered and for which a flatMap function is defined.
 
+## Step Four: The Project Folders
 
+There are two basic project folders:
 
+1. The ScalaBasicsTemplate, which provides simple examples of language semantics
+2. The HttpServiceTemplate, which provides a basic project scaffold of an HTTP service that can serve JSON. A database and authentication middlewheres have not been implemented in order to keep complexity down, but I do have some code samples I can show of how to accomplish these things rather quickly and simply.

@@ -1,13 +1,13 @@
 #SBT
-.cache/
-.history/
-.lib/
-dist/*
+**/.cache/
+**/.history/
+**/.lib/
+**/dist/*
 **/target/*
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
+**/lib_managed/
+**/src_managed/
+**/project/boot/
+**/project/plugins/project/
 #Scala/Java
 *.class
 #Generic
@@ -20,4 +20,4 @@ project/plugins/project/
 #Node
 **/node_modules
 #Intellij
-/.idea
+**/.idea
