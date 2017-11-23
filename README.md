@@ -68,13 +68,13 @@ Another important part of this will be the idea of Pure and Total functions.
 - Create a new SBT Task
 
 ![New Task](/readme_images/CreateNewSbtTask.png?raw=true "New Sbt Task")
-- Define the Test Task as such. This task will run continuously and reload when it detects code changes.
+- Define the Test Task as such. This task will run continuously and reload when it detects code changes. 
 
 ![Test Task](/readme_images/TestTask.png?raw=true "Test Task")
 - Define the Run task as such. This task will run continuously and reload when it detects code changes.
 
 ![Run Task](/readme_images/RunTask.png?raw=true "Run Task")
-- Both tasks can be stopped at any time by using the stop button on the top-right of IDEA.
+- Both tasks can be stopped at any time by using the stop button on the top-right of IDEA. *(For the ScalaBasicsTemplate, just use run as the task, not ~reStart. The plugin that enables hot reloading will break the console-reading examples)*
 
 ![Task Menu](/readme_images/TaskMenu.png?raw=true "Task Menu") 
 
