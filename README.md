@@ -94,3 +94,7 @@ There are two basic project folders:
 
 1. The ScalaBasicsTemplate, which provides simple examples of language semantics
 2. The HttpServiceTemplate, which provides a basic project scaffold of an HTTP service that can serve JSON. A database and authentication middlewheres have not been implemented in order to keep complexity down, but I do have some code samples I can show of how to accomplish these things rather quickly and simply.
+
+## Step Five: Not Actually a Step, I just wanted your attention:
+
+For -BASIC- scala syntax without much explanation of rationale or purpose, you can go to this ol' gem. [LearnXinYMinutes](https://learnxinyminutes.com/docs/scala/)
