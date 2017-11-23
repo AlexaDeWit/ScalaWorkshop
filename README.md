@@ -16,6 +16,31 @@ a program instead in terms of functions taking immutable data and returning immu
 
 Another important part of this will be the idea of Pure and Total functions.
 
+##But why though?
+
+- Letting the compiler do as much work as possible is pretty cool. After all, what can never be null never needs a null check!
+- Data Sharing: In this programming paradigm, we use immutable values to contain state. Thanks to this, we can use a concurrency model that relies heavily on shared access to resources.... Without -ever- needing locks, or mutexes, and without ever having a race condition. *(Except things that are below our level of abstraction as must always forever be so, such as a database-connection-level lock on a specific row)*
+- Correctness:
+- Reasonability: Once one is familiar with functional syntax, something like
+ `List(1,2,3,4).map(_ * 2)`
+ becomes much easier to read than the old imperative approach of
+ ```
+ var nums = new List{ 1, 2, 3, 4 };
+ public List<int> doubleNums(List<int> nums) {
+    var accumulator = new List<int>();
+    foreach(var i in nums) {
+        accumulator.Add(i * 2);
+    }
+    return accumulator;
+ }
+
+ ``` 
+ - And while I recognize that the above example is fairly contrived, and not what one would do
+ in the context of C# with LINQ.... The important thing here is that... When you use the LINQ approach
+ you are using a subset of the techniques and approaches we will discuss here. As I am sure you all know,
+ LINQ -is- functional programming. At least, some of it ;)
+ - A bunch of other reasons including maintainability, referential transparency, and all sorts of stuff, but you already probably know some of the benfits if this workshop interests you. 
+
 ##Step One: Get the tools.
 
 ###Windows
