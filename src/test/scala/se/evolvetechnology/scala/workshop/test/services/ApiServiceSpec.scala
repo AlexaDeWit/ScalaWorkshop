@@ -7,7 +7,7 @@ import se.evolvetechnology.scala.workshop.services.ApiService
 import org.http4s.dsl.io._
 
 class ApiServiceSpec extends FlatSpec with Matchers {
-  
+
   private lazy val apiService = ApiService().route.orNotFound
   "The Api Service" should "return a 200 OK response at its root" in {
     val getRoot = Request[IO](Method.GET, uri("/"))
