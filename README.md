@@ -49,6 +49,7 @@ Another important part of this will be the idea of Pure and Total functions.
 - The build automation tool: [sbt](http://www.scala-sbt.org/download.html). Make sure that you add it to your `$PATH`
 - Set your JAVA_HOME environment variable: [confluence](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html)
 - You will need an editor. I highly recommend Intellij's [IDEA](https://www.jetbrains.com/idea/download/?gclid=EAIaIQobChMIwru2stDU1wIV3cqyCh1ZSQCzEAAYASABEgIRbvD_BwE&gclsrc=aw.ds.ds&dclid=CLjSu97Q1NcCFVGTGAodGz0OnA#section=windows). *Seriously, trust me on this, if you want something intellisense-likey, there's almost no other option for an editor.*
+- Install the Scala/SBT plugin in IDEA during the install process.
 - I recommend using git bash when executing sbt commands, but who knows maybe powershell is fine too. I wouldn't know.
 
 ### OSX
@@ -57,8 +58,18 @@ Another important part of this will be the idea of Pure and Total functions.
 - Set your `JAVA_HOME` environment variable. [This might be helpful?](http://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux)
 - SBT (build automation tool): `brew install sbt`
 - You will need an editor. I highly recommend Intellij's [IDEA](https://www.jetbrains.com/idea/download/?gclid=EAIaIQobChMIn7_C49LU1wIVE5AYCh18cgFkEAAYASABEgLXw_D_BwE&gclsrc=aw.ds.ds&dclid=CNSNt-TS1NcCFReAmgodkS0Ojg#section=mac). *Seriously, trust me on this, if you want something intellisense-likey, there's almost no other option for an editor.*
+- Install the Scala/SBT plugin in IDEA during the install process.
 
-## Step Two: Some Basic Terminology
+## Step Two: Build the thing and run the Test(s)
+
+1. Open the Edit Configurations Menu
+![Config Menu](/readme_images/EditRunConfigurations.png?raw=true "Configuarion Menu")
+2. Create a new SBT Task
+3. Define the Test Task as such. This task will run continuously and reload when it detects code changes.
+4. Define the Run task as such. This task will run continuously and reload when it detects code changes.
+5. Both tasks can be stopped at any time by using the stop button on the top-right of IDEA. 
+
+## Step Three: Some Basic Terminology
 
 
 
