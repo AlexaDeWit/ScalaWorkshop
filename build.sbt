@@ -22,6 +22,7 @@ libraryDependencies ++= Seq(
   "org.http4s"         %% "http4s-blaze-server" % Http4sVersion,
   "org.http4s"         %% "http4s-circe"        % Http4sVersion,
   "org.http4s"         %% "http4s-dsl"          % Http4sVersion,
+  "org.http4s"         %% "http4s-blaze-client" % Http4sVersion,
   "ch.qos.logback"     %  "logback-classic"     % LogbackVersion,
   "io.circe"           %% "circe-parser"        % circeVersion,
   "io.circe"           %% "circe-generic"       % circeVersion,
